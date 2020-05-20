@@ -1,103 +1,317 @@
 <template>
   <div class="page" data-name="home">
     <!-- Top Navbar -->
-    <div class="navbar navbar-large">
+    <div class="navbar">
       <div class="navbar-bg"></div>
-      <div class="navbar-inner">
+      <div class="navbar-inner sliding">
         <div class="left">
           <a href="#" class="link icon-only panel-open" data-panel="left">
             <i class="icon f7-icons if-not-md">menu</i>
             <i class="icon material-icons if-md">menu</i>
           </a>
         </div>
-        <div class="title sliding">AgenziaMobile</div>
-        <div class="right">
-          <a href="#" class="link icon-only panel-open" data-panel="right">
-            <i class="icon f7-icons if-not-md">menu</i>
-            <i class="icon material-icons if-md">menu</i>
-          </a>
+        <div class="title sliding">Posta</div>
         </div>
-        <div class="title-large">
-          <div class="title-large-text">AgenziaMobile</div>
-        </div>
-      </div>
-    </div>
-    <!-- Toolbar-->
-    <div class="toolbar toolbar-bottom">
-      <div class="toolbar-inner">
-        <a href="#" class="link">Left Link</a>
-        <a href="#" class="link">Right Link</a>
-      </div>
-    </div>
+     </div>
     <!-- Scrollable page content-->
     <div class="page-content">
-      <div class="block block-strong">
-        <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
+      <div class="block-title">Inline Labels</div>
+      <!--list-->
+      <div class="list medium-inset form-store-data inline-labels no-hairlines-md" id="home-page-form">
+          <ul id="listabollettini">
+              <!--input 1 - 10.20-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">10.20</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="b10">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
+              <!--input 2 - 16-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">16.00</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="b16">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
+              <!--input 3 - 32-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">32.00</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="b32">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
+              <!--input 4 - 48-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">48.00</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="b48">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
+              <!--input 5 - 64-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">64.00</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="b64">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
+              <!--input 6 - ciclomotore-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">ciclomotore</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="bciclo">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
+              <!--input 7 - targa prova-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">prova</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="bprova">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
+              <!--input 8 - motociclo-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">motociclo</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="bmoto">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
+              <!--input 9 - targa ripetitrice-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">ripetitrice</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="bripe">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
+              <!--input 10 - auotveicolo-->
+              <li class="item-content item-input">
+                  <div class="item-inner">
+                      <div class="item-title item-label">autovettura</div>
+                      <div class="item-input-wrap">
+                          <input type="text" placeholder="nr. bollettini" pattern="[0-9]*" name="bauto">
+                          <span class="input-clear-button"></span>
+                      </div>
+                  </div>
+                  <div class="item-input disabled">
+                      <input type="text" style="text-align:center" placeholder="---" />
+                  </div>
+              </li>
 
-        <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
+              <!--riga totale-->
+              <li>
+                  <div class="item-content">
+                      <div class="item-inner">
+                          <div class="item-title label">totale</div>
+                      </div>
+                      <div class="item-input disabled">
+                          <input type="text" style="text-align:center" placeholder="totale" id="idtot" name="btot"/>
+                      </div>
+                  </div>
 
-        <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p>
-      </div>
-      <div class="block-title">Navigation</div>
-      <div class="list">
-        <ul>
-          <li>
-            <a href="/about/" class="item-content item-link">
-              <div class="item-inner">
-                <div class="item-title">About</div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/form/" class="item-content item-link">
-              <div class="item-inner">
-                <div class="item-title">Form</div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
+              </li>
 
-      <div class="block-title">Modals</div>
-      <div class="block block-strong">
-        <div class="row">
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
-          </div>
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="block-title">Panels</div>
-      <div class="block block-strong">
-        <div class="row">
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill panel-open" data-panel="left">Left Panel</a>
-          </div>
-          <div class="col-50">
-            <a href="#" class="button button-raised button-fill panel-open" data-panel="right">Right Panel</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="list links-list">
-        <ul>
-          <li>
-            <a href="/dynamic-route/blog/45/post/125/?foo=bar#about">Dynamic (Component) Route</a>
-          </li>
-          <li>
-            <a href="/load-something-that-doesnt-exist/">Default Route (404)</a>
-          </li>
-          <li>
-            <a href="/request-and-load/user/123456/">Request Data & Load</a>
-          </li>
-        </ul>
+              <!-- bottoni -->
+              <li>
+                  <a href="#" class="list-button" @click="CalcolaTot()">Calcola il totale</a>
+              </li>
+              <li>
+                  <a href="#" class="list-button" @click="openAlert()">Button 1</a>
+              </li>
+              <li>
+                  <a href="#" class="list-button color-red" @click="myfunction()">Button 2</a>
+              </li>
+          </ul>
       </div>
     </div>
-  </div>
+  </div>  
+
+  
 </template>
+<!-- script -->
 <script>
-export default {}
+  export default {
+      data: function () {
+          return {
+              title: 'your title',
+          }
+      },
+      methods: {
+          openAlert: function () {
+              //now its working
+              var self = this.$app.dialog.alert('Hello world! again');
+          },
+          myfunction: function () {
+              var app = this.$app;
+
+              var cip = 3;
+              var ciop = 4;
+              var ciup = cip + ciop;
+
+              var pip = ciup.toString();
+
+
+              app.dialog.alert("hey hey why " + pip + ciup);
+
+
+              var uella = mysum();
+              var lella = mystestfunc();
+
+
+              app.dialog.alert(uella);
+              app.dialog.alert(lella);
+
+              mystestfunction2();
+
+
+          },
+
+          CalcolaTot: function () {
+
+          //    CalcolaTotale();
+              cippalippa();
+          },
+          //mysum: function () {
+          //    var cip = 3;
+          //    var ciop = 4;
+          //    var ciup = cip + ciop;
+
+          //    return ciup;
+
+
+          //},
+      }
+  }
+
+
+
+
+  function mysum () {
+      var cip = 3;
+      var ciop = 4;
+      var ciup = cip + ciop;
+
+      return ciup;
+
+
+  }
+
+  function mystestfunc() {
+
+      var cippa = ((document.getElementById("elemento1").value));
+
+      return cippa;
+  }
+   
+  function mystestfunction2() {
+
+      var sgnappa = mystestfunc();
+      var sgnappa = sgnappa + " uella";
+
+      ((document.getElementById("elemento2").value = sgnappa + " mah boh"));
+
+      //return sgnappa;
+    } 
+
+function CalcolaTotale () {
+
+    var numinserito = ((document.getElementById("elemento3").value));
+    var numinserito = (numinserito * (10.20 + 1.78));
+    ((document.getElementById("elemento4").value = numinserito.toFixed(2)));
+  
+  
+}
+
+
+function cippalippa() {
+    var ul = document.getElementById("listabollettini");
+    console.log(ul);
+    var items = ul.getElementsByTagName("input");
+    console.log(items);
+    //var importi = [10.20, 0, 16, 0, 32, 0, 13.58, 0, 22.26, 0, 41.78, 0, 5.1, 0, 18.37, 0, 24.74, 0, 19.32, 0, 41.37, 0];
+    //var dirittiPosta = 1.78;
+    var importi = [10.20, 0, 16, 0, 32, 0, 48, 0, 64, 0, 13.58, 0, 18.37, 0, 22.26, 0, 24.74, 0, 41.78, 0 ];
+    var dirittiPosta = 1.78;
+
+    var totaleBollettini = 0;
+    for (var i = 0; i < 20; i = i+2) {
+        var a = items[i].value;
+        console.log("a " + a);
+        var b = importi[i];
+        console.log("b " + b);
+        var c = a * (b + dirittiPosta);
+        console.log("c " +c);
+        var d = parseFloat(c);
+        console.log("d" + d);
+        if (d === 0) {
+            items[i+1].value = null;
+        } else if (d !== null) {
+            items[i+1].value = d.toFixed(2);
+        }
+        totaleBollettini += d;
+    }
+    // scrivi i totale sull'ultima riga'
+    document.getElementById("idtot").value = totaleBollettini.toFixed(2);
+}
+
+
+
+
+
+
+
+
 </script>
