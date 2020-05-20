@@ -1,0 +1,61 @@
+{
+  "cwd": "C:\\Users\\Integra\\source\\repos\\AgenziaMobile",
+  "type": [
+    "pwa"
+  ],
+  "name": "AgenziaMobile",
+  "framework": "core",
+  "template": "split-view",
+  "bundler": "webpack",
+  "cssPreProcessor": "less",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": true,
+  "customBuildConfig": {
+    "rtl": false,
+    "darkTheme": true,
+    "lightTheme": true,
+    "themes": [
+      "ios",
+      "md"
+    ],
+    "components": [
+      "appbar",
+      "dialog",
+      "popup",
+      "popover",
+      "actions",
+      "preloader",
+      "list-index",
+      "tabs",
+      "panel",
+      "form",
+      "input",
+      "checkbox",
+      "radio",
+      "toggle",
+      "range",
+      "pull-to-refresh",
+      "data-table",
+      "messages",
+      "messagebar",
+      "notification",
+      "autocomplete",
+      "tooltip",
+      "menu",
+      "login-screen"
+    ]
+  },
+  "webpack": {
+    "developmentSourceMap": true,
+    "productionSourceMap": true,
+    "hashAssets": false,
+    "preserveAssetsPaths": false,
+    "inlineAssets": true
+  }
+}
